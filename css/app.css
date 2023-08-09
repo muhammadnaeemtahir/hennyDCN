@@ -20,10 +20,27 @@ a {
     text-decoration: unset;
 }
 
+.homepage-wrapper {
+    height: 100dvh;
+}
+
+
 /* header: start */
 .badge-bell {
-    top: 25% !important;
-    left: 35% !important;
+    top: 35% !important;
+    left: 33% !important;
+    padding: .3rem;
+}
+
+.badge-cart {
+    top: 55% !important;
+    left: 50% !important;
+}
+
+.country-flag-icon {
+    max-width: calc(1.375rem + 1.5vw) !important;
+    width: 100%;
+    height: auto;
 }
 
 /* header: end */
