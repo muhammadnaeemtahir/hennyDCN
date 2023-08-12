@@ -2,13 +2,14 @@
 :root {
     --primary-font: 'arial', sans-serif;
     --white-color: #ffffff;
-    --color-gray: #f3f0f0;
+    --gray-color: #f3f0f0;
+
 }
 
 /* Global Styles */
 body {
     font-family: var(--primary-font);
-    background-color: var(--color-gray);
+    background-color: var(--gray-color);
     font-size: 1rem;
     line-height: 1.6;
 
@@ -21,7 +22,7 @@ a {
 }
 
 .home-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../assets/images/home-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../assets/images/home-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,4 +47,28 @@ a {
     height: auto;
 }
 
+.dropdown-toggle::after {
+    content: unset;
+}
+
 /* header: end */
+
+
+.main-bg-frame {
+    background: url('../assets/images/bg-frame.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* navtabs: start */
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+/* navtabs: start */

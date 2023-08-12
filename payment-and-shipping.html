@@ -40,9 +40,16 @@
                             class="img-fluid border border-dark border-2 rounded rounded-circle country-flag-icon"
                             alt="">
                     </button>
-                    <button type="button" class="btn position-relative">
-                        <i class="bi bi-person-circle fs-1"></i>
-                    </button>
+                    <div class="dropdown d-inline">
+                        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle fs-1"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./account.html">Account</a></li>
+                            <li><button class="dropdown-item">Logout</button></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-6 justify-content-center">
@@ -108,6 +115,7 @@
         </nav>
     </header>
     <!-- header: end -->
+
 
     <main class="my-md-5 my-3">
         <div class="container">
