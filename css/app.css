@@ -72,3 +72,24 @@ a {
 }
 
 /* navtabs: start */
+
+
+.quick-view-overlay {
+    opacity: 0;
+}
+
+.product-card:is(:hover) .quick-view-overlay {
+    opacity: 1;
+    animation: quickview-overlay .5s ease-in-out;
+}
+
+
+@keyframes quickview-overlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
