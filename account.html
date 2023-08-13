@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Gallary</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <!-- header: start -->
+    <header class="header bg-white">
+        <div class="container-fluid">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-md-3 pt-3">
+                <div class="col-md-3">
+                    <button type="button" class="btn position-relative">
+                        <img src="./assets/icons/usa-flag.png"
+                            class="img-fluid border border-dark border-2 rounded rounded-circle country-flag-icon"
+                            alt="">
+                    </button>
+                    <div class="dropdown d-inline">
+                        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle fs-1"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./account.html">Account</a></li>
+                            <li><button class="dropdown-item">Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 justify-content-center">
+                    <a href="./index.html">
+                        <img src="./assets/logos/logo-main.png" alt="HennyDCN" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-md-3 text-end">
+                    <a href="./cart.html" class="btn position-relative">
+                        <i class="bi bi-bag fs-1"></i>
+                        <span class="position-absolute translate-middle badge badge-cart rounded-pill text-dark fs-6">
+                            1
+                        </span>
+                    </a>
+                    <button type="button" class="btn position-relative">
+                        <i class="bi bi-bell fs-1"></i>
+                        <span
+                            class="position-absolute translate-middle badge badge-bell bg-danger border border-light rounded-circle">
+                        </span>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" aria-label="Offcanvas navbar large">
+            <div class="container">
+                <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-dark fs-1"></i>
+                </button>
+                <div class="offcanvas p-md-0 p-2 offcanvas-start" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-md-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="./tops.html">Tops</a>
+                            </li>
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="./bottoms.html">Bottoms</a>
+                            </li>
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="#">Accesseries</a>
+                            </li>
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="./news.html">News</a>
+                            </li>
+                            <li class="nav-item mx-md-3">
+                                <a class="nav-link fw-bold" href="./gallary.html">Gallary</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header: end -->
+
+    <!-- main: start -->
+    <main class="main-bg-frame">
+        <div class="container min-vh-100 py-5 px-md-3">
+            <div class="card bg-transparent border-dark border-2 mt-5 rounded-0">
+                <div class="card-header bg-dark bg-opacity-50 rounded-0">
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-10">
+                            <h1 class="text-white fw-bold mb-3">Jhon Doe</h1>
+                            <nav>
+                                <div class="nav border-0 nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-account-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-account" type="button" role="tab"
+                                        aria-controls="nav-account" aria-selected="true">Account</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-contact" type="button" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                    <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-disabled" type="button" role="tab"
+                                        aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-md-5 bg-white" style="--bs-bg-opacity: 0.9">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-account" role="tabpanel"
+                            aria-labelledby="nav-account-tab" tabindex="0">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-2">
+                                        <label for="lang" class="form-label fw-bold">Language</label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-select rounded-0" aria-label="Default select example">
+                                            <option value="en" selected>English</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-1">
+                                        <label for="email" class="form-label fw-bold">Email:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="email" name="" class="form-control border-0" value="name@email.com"
+                                            id="">
+                                    </div>
+                                    <div class="col-md-2 ms-auto">
+                                        <button class="btn btn-primary rounded-0 w-100">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-1">
+                                        <label for="password" class="form-label fw-bold">Password:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="password" name="" class="form-control border-0" value="12345"
+                                            id="">
+                                    </div>
+                                    <div class="col-md-2 ms-auto">
+                                        <button class="btn btn-primary rounded-0 w-100">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="security" class="form-label fw-bold">Additional sequrity
+                                            question:</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea name="" class="form-control bg-light border-dark" id="" cols="30"
+                                            rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="answer" class="form-label fw-bold">Answer:</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea name="" class="form-control bg-light border-dark" id="" cols="30"
+                                            rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-1">
+                                        <label for="status" class="form-label fw-bold">Status:</label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <small class="">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur
+                                            repellendus recusandae velit reprehenderit praesentium! Consequatur,
+                                            cupiditate molestiae exercitationem.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-2">
+                                        <label for="points" class="form-label fw-bold">Purchased points:</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <small class="">
+                                            987, 976 points
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-2">
+                                        <label for="card-blnc" class="form-label fw-bold">Gift card balance:</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <small class="">
+                                            $0.00
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-2">
+                                        <label for="card-blnc" class="form-label fw-bold">Gift card balance:</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <small class="">
+                                            987, 976 points
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-2">
+                                        <label for="game-blnc" class="form-label fw-bold">Game credit balance:</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <small class="">
+                                            003
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button class="btn text-danger fw-bold">Delete Account</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                            tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main: start -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
