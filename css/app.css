@@ -117,3 +117,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.recall {
+    background: url('../assets/images/recall.png') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
