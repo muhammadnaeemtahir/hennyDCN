@@ -93,3 +93,27 @@ a {
         opacity: 1;
     }
 }
+
+.spinner {
+    background: url('../assets/images/spinner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-badge {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 20%;
+}
+
+@media (max-width: 768px) {
+    .profile-badge {
+        position: unset;
+        transform: unset;
+        top: unset;
+        left: unset;
+    }
+
+}
