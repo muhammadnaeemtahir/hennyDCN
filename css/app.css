@@ -73,6 +73,33 @@ a {
 
 /* navtabs: start */
 
+/* account: start */
+.profile-update {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    top: -20%;
+}
+
+.profile-update-items {
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .profile-update {
+        position: unset;
+        transform: unset;
+        left: unset;
+        top: unset;
+    }
+
+    .profile-update-items {
+        position: unset;
+    }
+}
+
+/* account: end */
+
 
 .fade-up {
     opacity: 0;
@@ -93,23 +120,6 @@ a {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.profile-badge {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 45%;
-    left: 20%;
-}
-
-@media (max-width: 768px) {
-    .profile-badge {
-        position: unset;
-        transform: unset;
-        top: unset;
-        left: unset;
-    }
-
 }
 
 .spinner {
