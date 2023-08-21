@@ -17,6 +17,11 @@
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- splidejs CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -35,11 +40,6 @@
             <header
                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-md-3 pt-3">
                 <div class="col-md-3">
-                    <button type="button" class="btn position-relative">
-                        <img src="./assets/icons/usa-flag.png"
-                            class="img-fluid border border-dark border-2 rounded rounded-circle country-flag-icon"
-                            alt="">
-                    </button>
                     <div class="dropdown d-inline">
                         <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -47,7 +47,9 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./account.html">Account</a></li>
-                            <li><button class="dropdown-item">Logout</button></li>
+                            <li>
+                                <a href="./dashboard/login.html" class="dropdown-item">Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -194,22 +196,22 @@
                     <div class="offcanvas-body d-flex justify-content-md-center">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./tops.html">Tops</a>
+                                <a class="nav-link" href="./tops.html">Tops</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./bottoms.html">Bottoms</a>
+                                <a class="nav-link" href="./bottoms.html">Bottoms</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="#">Accesseries</a>
+                                <a class="nav-link" href="./accessories.html">Accesseries</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./news.html">News</a>
+                                <a class="nav-link" href="./news.html">News</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./gallary.html">Gallary</a>
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
                             </li>
                         </ul>
                     </div>
@@ -220,20 +222,199 @@
     <!-- header: end -->
 
     <!-- main: start -->
-    <main class="bg-danger min-vh-100 home-hero" style="display: grid; place-content: center;">
+    <main class="position-relative">
+        <div class="position-absolute translate-middle top-50 start-50 w-100" style="z-index: 999;">
+            <h1 class="text-center display-1 text-white fw-bold mb-md-5" style="-webkit-text-stroke: 2px black">
+                New Collection
+            </h1>
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg p-md-3 rounded-pill w-50">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/images/home-bg.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/images/home-bg.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/home-bg.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            </button>
+        </div>
+    </main>
+    <!-- <main class="bg-danger min-vh-100 home-hero" style="display: grid; place-content: center;">
         <h1 class="text-center display-1 text-white fw-bold mb-5" style="-webkit-text-stroke: 2px black">
             New Collection
         </h1>
         <button class="btn btn-primary btn-lg p-md-3 rounded-pill w-50 mx-auto">
             Shop Now
         </button>
-    </main>
+    </main> -->
     <!-- main: start -->
+
+    <!-- features & hot sales: start -->
+    <section class="bg-white py-md-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="card border-0 p-0 position-relative overlay-card">
+                        <div class="position-absolute translate-middle start-50 top-50 text-overlay">
+                            <h1 class="text-center text-white">
+                                VSOP
+                            </h1>
+                        </div>
+                        <img src="./assets/images/model-img3.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="card border-0 p-0 position-relative overlay-card">
+                        <div class="position-absolute translate-middle start-50 top-50 text-overlay">
+                            <h1 class="text-center text-white">
+                                Pipework
+                            </h1>
+                        </div>
+                        <img src="./assets/images/model-img1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="card border-0 p-0 position-relative overlay-card">
+                        <div class="position-absolute translate-middle start-50 top-50 text-overlay">
+                            <h1 class="text-center text-white">
+                                Original
+                            </h1>
+                        </div>
+                        <img src="./assets/images/model-img3.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h1 class="text-center mb-4">
+                FEATURED ITEMS
+            </h1>
+            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/products/black-shirt.jpg" alt="" class="img-fluid">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- features & hot sales: end -->
+
+    <!-- footer: start -->
+    <footer class="bg-dark bg-opacity-25 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./tops.html">Tops</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./bottoms.html">Bottoms</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./accessories.html">Accessories</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./news.html">News</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./exclusives.html">Exclusives</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./our-mission.html">Our Mission</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./faqs.html">FAQs</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./shipping-and-delivery.html">Sipping & Delivery</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./returns-and-exchanges.html">Returns & Exchanges</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <small>
+                        &copy; HennyDnC 2023
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer: end -->
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- splidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-carousel', {
+                type: 'loop',
+                perPage: 3,
+                perMove: 1,
+                autoplay: true,
+                interval: 3000,
+                breakpoints: {
+                    768: {
+                        perPage: 2,
+                    },
+                    576: {
+                        perPage: 1,
+                    }
+                }
+            }).mount();
+        });
+    </script>
+
 
     <!-- custom js -->
     <script src="./js/app.js"></script>

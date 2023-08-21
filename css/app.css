@@ -74,26 +74,26 @@ a {
 /* navtabs: start */
 
 
-.quick-view-overlay {
+.fade-up {
     opacity: 0;
 }
 
-.product-card:is(:hover) .quick-view-overlay {
+.product-card:hover .fade-up {
     opacity: 1;
-    animation: quickview-overlay .5s ease-in-out;
+    animation: quickview-overlay .3s ease-in-out;
 }
-
 
 @keyframes quickview-overlay {
     0% {
         opacity: 0;
+        transform: translateY(10px);
     }
 
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
-
 
 .profile-badge {
     position: absolute;
@@ -122,4 +122,23 @@ a {
     background: url('../assets/images/recall.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.overlay-card .text-overlay {
+    opacity: 0;
+}
+
+.overlay-card:is(:hover) .text-overlay {
+    opacity: 1;
+    animation: text-overlay .5s ease-in-out;
+}
+
+@keyframes text-overlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
