@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Gallary</title>
+    <title>Account</title>
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,6 +20,19 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!-- Include the flag-icon-css library for flag icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <style>
+        .language-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .flag-icon {
+            margin-right: 10px;
+        }
+    </style>
+
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -30,24 +43,34 @@
 
 <body>
     <!-- header: start -->
-    <header class="header bg-white">
+    <header class="header bg-white fixed-top">
         <div class="container-fluid">
             <header
                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-md-3 pt-3">
                 <div class="col-md-3">
-                    <button type="button" class="btn position-relative">
-                        <img src="./assets/icons/usa-flag.png"
-                            class="img-fluid border border-dark border-2 rounded rounded-circle country-flag-icon"
-                            alt="">
-                    </button>
+                    <div class="language-dropdown">
+                        <button class="btn dropdown-toggle border-0" type="button" id="languageDropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="flag-icon flag-icon-us fs-3"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en"><span
+                                    class="flag-icon flag-icon-us"></span> English</a>
+                            <a class="dropdown-item" href="#" data-lang="fr"><span
+                                    class="flag-icon flag-icon-fr"></span> Français</a>
+                        </div>
+                    </div>
+
                     <div class="dropdown d-inline">
                         <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-person-circle fs-1"></i>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./account.html">Account</a></li>
-                            <li><button class="dropdown-item">Logout</button></li>
+                            <li class="px-2 pb-1"><a class="" href="./account.html">Account</a></li>
+                            <li class="px-2 pb-1">
+                                <a class="" href="./login.html">Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -65,12 +88,115 @@
                             1
                         </span>
                     </a>
-                    <button type="button" class="btn position-relative">
-                        <i class="bi bi-bell fs-1"></i>
-                        <span
-                            class="position-absolute translate-middle badge badge-bell bg-danger border border-light rounded-circle">
-                        </span>
-                    </button>
+                    <div class="dropdown-header border-0 d-inline">
+                        <button class="btn border-0 dropdown-toggle position-relative" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell fs-1"></i>
+                            <span
+                                class="position-absolute translate-middle badge badge-bell bg-danger border border-light rounded-circle">
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu p-2" style="height: 15rem; overflow-y: scroll;">
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="border-bottom mb-1">
+                                <a class="dropdown-item text-wrap" href="#">
+                                    <i class="fa-solid fa-user fs-3 me-1"></i>
+                                    Lorem ipsum dolor sit amet.
+                                    <small class="d-block text-end">
+                                        9 min ago
+                                    </small>
+                                </a>
+                                <div class="text-end">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-trash text-danger"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>
         </div>
@@ -91,22 +217,22 @@
                     <div class="offcanvas-body d-flex justify-content-md-center">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./tops.html">Tops</a>
+                                <a class="nav-link" href="./tops.html">Tops</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./bottoms.html">Bottoms</a>
+                                <a class="nav-link" href="./bottoms.html">Bottoms</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="#">Accesseries</a>
+                                <a class="nav-link" href="./accessories.html">Accessories</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./news.html">News</a>
+                                <a class="nav-link" href="./news.html">News</a>
                             </li>
                             <li class="nav-item mx-md-3">
-                                <a class="nav-link fw-bold" href="./gallary.html">Gallary</a>
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
                             </li>
                         </ul>
                     </div>
@@ -117,7 +243,7 @@
     <!-- header: end -->
 
     <!-- main: start -->
-    <main class="main-bg-frame">
+    <main class="main-bg-frame main-section">
         <div class="container min-vh-100 py-5 px-md-3">
             <div class="card bg-transparent border-dark border-2 mt-md-5 rounded-0">
                 <div class="card-header bg-dark bg-opacity-50 rounded-0">
@@ -126,10 +252,9 @@
                             <div class="profile-update">
                                 <div class="profile-update-items">
                                     <div class="position-relative">
-                                        <button class="btn border-0 position-absolute translate-middle"
-                                            style="left: 10%; top: 10%;">
-                                            <img src="./assets/icons/upload-btn.png" id="upload-img" alt=""
-                                                class="img-fluid w-50">
+                                        <button class="btn border-0 position-absolute translate-middle" id="upload-img"
+                                            type="button" style="left: 10%; top: 10%;">
+                                            <img src="./assets/icons/upload-btn.png" alt="" class="img-fluid w-50">
                                         </button>
                                         <img src="https://randomuser.me/api/portraits/men/11.jpg" alt=""
                                             class="img-fluid rounded-circle border border-dark border-3 w-100">
@@ -984,30 +1109,127 @@
     </main>
     <!-- main: start -->
 
+    <!-- footer: start -->
+    <footer class="bg-dark bg-opacity-25 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./tops.html">Tops</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./bottoms.html">Bottoms</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./accessories.html">Accessories</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./news.html">News</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./exclusives.html">Exclusives</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./our-mission.html">Our Mission</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./faqs.html">FAQs</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./shipping-and-delivery.html">Sipping & Delivery</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./returns-and-exchanges.html">Returns & Exchanges</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="./privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <small>
+                        &copy; HennyDnC 2023
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer: end -->
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
+
     <script>
-        const uploadImg = document.querySelector('#upload-img');
-        const uploadBtn = document.querySelector('#upload-btn');
-        const uploadInput = document.querySelector('#upload-input');
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.querySelector(".dropdown-toggle");
+            const dropdownItems = document.querySelectorAll(".dropdown-item");
 
-        uploadBtn.addEventListener('click', () => {
-            uploadInput.click();
-        });
+            dropdownItems.forEach(item => {
+                item.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const selectedLanguage = item.getAttribute("data-lang");
+                    const flagIcon = item.querySelector(".flag-icon").classList[1];
 
-        uploadInput.addEventListener('change', () => {
-            const file = uploadInput.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.addEventListener('load', () => {
-                    uploadImg.setAttribute('src', reader.result);
+                    dropdownToggle.innerHTML = `<span class="flag-icon ${flagIcon} fs-3"></span>`;
                 });
-                reader.readAsDataURL(file);
-            }
+            });
         });
+    </script>
+
+
+    <script>
+        // Get a reference to the upload button element
+        const uploadButton = document.getElementById("upload-img");
+
+        // Add a click event listener to the button
+        uploadButton.addEventListener("click", () => {
+            // Create an input element of type 'file'
+            const fileInput = document.createElement("input");
+            fileInput.type = "file";
+
+            // Add an event listener for when a file is selected
+            fileInput.addEventListener("change", (event) => {
+                const selectedFile = event.target.files[0];
+
+                // Check if a file was selected
+                if (selectedFile) {
+                    // You can perform additional checks or actions here
+
+                    // For example, you might want to display a preview of the selected image
+                    const imagePreview = document.createElement("img");
+                    imagePreview.src = URL.createObjectURL(selectedFile);
+                    imagePreview.classList.add("img-fluid", "w-50");
+
+                    // Append the image preview to a container or display it wherever you need
+                    // For example:
+                    const previewContainer = document.getElementById("image-preview-container");
+                    previewContainer.innerHTML = ""; // Clear any previous previews
+                    previewContainer.appendChild(imagePreview);
+
+                    // You can also perform an upload action here using XMLHttpRequest, Fetch API, or other methods
+                    // For demonstration purposes, we'll just log the selected file's information
+                    console.log("Selected file:", selectedFile);
+                }
+            });
+
+            // Trigger the file input click event
+            fileInput.click();
+        });
+
     </script>
 
     <!-- custom js -->

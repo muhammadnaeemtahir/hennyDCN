@@ -15,6 +15,16 @@ body {
 
 }
 
+.main-section {
+    margin-top: 10em;
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        margin-top: 13em;
+    }
+}
+
 .nav-link,
 a {
     color: unset;
