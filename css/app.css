@@ -16,12 +16,12 @@ body {
 }
 
 .main-section {
-    margin-top: 10em;
+    margin-top: 9em;
 }
 
 @media (max-width: 768px) {
     .main-section {
-        margin-top: 13em;
+        margin-top: 12em;
     }
 }
 
@@ -50,6 +50,8 @@ a {
     top: 55% !important;
     left: 50% !important;
 }
+
+
 
 .country-flag-icon {
     max-width: calc(1.375rem + 1.5vw) !important;
