@@ -219,7 +219,7 @@ a {
 @media (max-width: 768px) {
     .grid-container {
         /* grid-template-columns: repeat(2, 1fr); */
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(8, 1fr);
     }
 
     .token-bar {
