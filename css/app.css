@@ -175,6 +175,13 @@ a {
     background-repeat: no-repeat;
 }
 
+.gold-tixx {
+    background: url('../assets/images/gold-tixx-bg.png') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .bg-pink {
     background-color: var(--color-pink);
 }
