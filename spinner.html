@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom CSS -->
     <link rel="stylesheet" href="./css/app.css">
     <style>
@@ -50,15 +54,22 @@
                                 <div class="my-5">
                                     <img src="./assets/clips/current-prize.png" alt="" class="img-fluid w-75">
                                 </div>
-                                <h2 class="fw-bold pb-3" style="-webkit-text-stroke: 1px white">SELECT
+                                <h2 class="fw-bold" style="-webkit-text-stroke: 1px white">SELECT
                                     NUMBER <br class="d-md-block d-none"> AND SPIN</h2>
-                                <form class="mb-3 my-5">
-                                    <div class="mb-3">
-                                        <input type="number" class="p-2 w-25 text-center fw-bold h1 backdrop-shadow"
-                                            value="0" name="" id="">
+                                <form class="mb-3 mb-5">
+                                    <div class="input-group w-50 mx-auto mb-3 bg-white backdrop-shadow">
+                                        <input type="text" class="form-control text-center border-0 fs-1" value="00">
+                                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                                            <button type="button" class="btn py-1">
+                                                <i class="fa-solid fa-angle-up fw-bold fs-3"></i>
+                                            </button>
+                                            <button type="button" class="btn py-1">
+                                                <i class="fa-solid fa-angle-down fw-bold fs-3"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                     <button class="btn btn-sm mt-3">
-                                        <img src="./assets/icons/spin-btn.png" alt="" class="img-fluid">
+                                        <img src="./assets/icons/spin-btn.png" alt="" class="img-fluid w-50">
                                     </button>
                                     <p class="text-center display-5 fw-bold mb-0 mt-3">
                                         CREDITS: <span class="text-primary credits_stroke">30</span>

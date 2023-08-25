@@ -233,3 +233,7 @@ a {
 
 
 /* games: end */
+
+.form-control:focus {
+    box-shadow: none;
+}
