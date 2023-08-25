@@ -3,6 +3,7 @@
     --primary-font: 'arial', sans-serif;
     --white-color: #ffffff;
     --gray-color: #f3f0f0;
+    --color-pink: #de2a7b;
 
 }
 
@@ -134,17 +135,6 @@ a {
     }
 }
 
-.spinner {
-    background: url('../assets/images/spinner-bg.png') no-repeat center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.recall {
-    background: url('../assets/images/recall.png') no-repeat center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .overlay-card .text-overlay {
     opacity: 0;
@@ -166,6 +156,29 @@ a {
 }
 
 /* games: start */
+
+.spinner {
+    background: url('../assets/images/spinner-bg.png') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recall {
+    background: url('../assets/images/recall.png') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slot {
+    background: url('../assets/images/slot-bg.png') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+}
+
 .grid-container {
     display: grid;
     align-content: flex-start;
@@ -184,14 +197,25 @@ a {
     -webkit-text-stroke: 2px #000;
 }
 
+.token-bar {
+    height: 25rem;
+    overflow-y: auto;
+
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .token-bar {
+        height: 25rem;
     }
 }
 
 .backdrop-shadow {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
+
 
 /* games: end */
