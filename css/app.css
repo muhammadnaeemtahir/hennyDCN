@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
     .main-section {
-        margin-top: 12em;
+        margin-top: 13em;
     }
 }
 
@@ -71,6 +71,7 @@ a {
     background: url('../assets/images/bg-frame.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* navtabs: start */

@@ -435,22 +435,7 @@
         });
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownToggle = document.querySelector(".dropdown-toggle");
-            const dropdownItems = document.querySelectorAll(".dropdown-item");
-
-            dropdownItems.forEach(item => {
-                item.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const selectedLanguage = item.getAttribute("data-lang");
-                    const flagIcon = item.querySelector(".flag-icon").classList[1];
-
-                    dropdownToggle.innerHTML = `<span class="flag-icon ${flagIcon} fs-3"></span>`;
-                });
-            });
-        });
-    </script>
+    
 
 
 
