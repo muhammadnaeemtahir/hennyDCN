@@ -3,64 +3,194 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" .0>
-    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Login / Register</title>
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap core CSS -->
+    <!-- hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- splidejs CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/app.css">
 
+    <style>
+        .auth-section {
+            min-height: 100dvh;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .social-auth-icon {
+            width: 35px;
+            height: 35px;
+            mix-blend-mode: multiply;
+        }
+
+        .signup-layer {
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                url('./assets/images/bg-frame-auth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid g-0 overflow-hidden">
-        <div class="row">
-            <div class="col-md-6 d-md-block d-none">
-                <img src="./assets/images/clothing.jpg" alt="" class="img-fluid min-vh-100">
-            </div>
-            <div class="col-md-6 p-md-5 mt-md-0 mt-5">
-                <div class="container">
+    <main class="auth-section">
+        <div class="container-fluid">
+            <div class="row p-3">
+                <div class="col-md-6 mb-md-0 mb-5">
+                    <a href="#" class="hvr-icon-back fs-5">
+                        <i class="fa-solid fa-arrow-left hvr-icon me-2"></i> Back
+                    </a>
+                    <h1 class="text-center my-5 fw-bold">Log in</h1>
                     <form>
-                        <div class="text-center mb-md-5 mb-4">
-                            <a href="./index.html">
-                                <img src="./assets/logos/logo-main.png" alt="" class="img-fluid w-75">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-3">
+                                <input type="text"
+                                    class="form-control bg-secondary bg-opacity-25 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Username or Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-4">
+                                <input type="password"
+                                    class="form-control bg-secondary bg-opacity-25 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                        <a href="" class="d-block text-center text-primary text-decoration-underline">Forgot your
+                            password?</a>
+                        <div class="row">
+                            <div class="col-md-5 mx-auto mt-3 mb-4">
+                                <button class="btn btn-primary w-100 rounded-0 btn-lg hvr-sweep-to-right">Login</button>
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            or <br> Login with
+                        </p>
+                        <div class="col-md-7 mx-auto">
+                            <div class="d-flex alighn-items-center justify-content-evenly">
+                                <a href="#">
+                                    <img src="./assets/icons/insta-icon.jpeg" class="img-fluid social-auth-icon">
+                                </a>
+                                <a href="#">
+                                    <img src="./assets/icons/google-icon.png" class="img-fluid social-auth-icon">
+                                </a>
+                                <a href="#">
+                                    <img src="./assets/icons/fb-icon.png" class="img-fluid social-auth-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 signup-layer pb-3">
+                    <h1 class="text-center my-1">Create Account</h1>
+                    <p class="text-center">Sign up with your social account or email address</p>
+                    <div class="col-md-7 mx-auto">
+                        <div class="d-flex alighn-items-center justify-content-evenly">
+                            <a href="#">
+                                <img src="./assets/icons/insta-icon.jpeg" class="img-fluid social-auth-icon">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icons/google-icon.png" class="img-fluid social-auth-icon">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/icons/fb-icon.png" class="img-fluid social-auth-icon">
                             </a>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-bold">Email <span
-                                    class="text-danger">*</span></label>
-                            <input type="email" class="form-control p-3 border-dark border-2"
-                                placeholder="name@email.com" name="email" required>
+                    </div>
+                    <div class="col-md-7 mx-auto my-2">
+                        <div class="row g-0 alighn-items-center justify-content-center">
+                            <div class="col-5">
+                                <hr class="">
+                            </div>
+                            <div class="col-2 text-center">
+                                or
+                            </div>
+                            <div class="col-5">
+                                <hr class="">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label fw-bold">Password <span
-                                    class="text-danger">*</span></label>
-                            <input type="password" class="form-control p-3 border-dark border-2"
-                                placeholder="Enter your password" name="password" required>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-3">
+                                <input type="text"
+                                    class="form-control bg-secondary bg-opacity-75 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Username">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <button class="btn btn-dark p-3 w-100" type="submit">Login</button>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-3">
+                                <input type="email"
+                                    class="form-control bg-secondary bg-opacity-75 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Email">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <p class="text-center">Don't have an account? <a href="./signup.html"
-                                    class="text-primary">Signup</a></p>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-4">
+                                <input type="password"
+                                    class="form-control bg-secondary bg-opacity-75 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Password">
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mb-3">
+                                <input type="password"
+                                    class="form-control bg-secondary bg-opacity-75 rounded-0 border-dark border-2 p-2"
+                                    placeholder="Conform Password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mx-auto mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input border-dark border-2" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Join the community
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mx-auto">
+                                <button
+                                    class="btn btn-primary w-100 rounded-0 btn-lg hvr-sweep-to-right">Submit</button>
+                            </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Bootstrap core JS -->
+    <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-
+    <!-- custom js -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
