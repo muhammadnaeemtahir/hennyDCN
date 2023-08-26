@@ -268,3 +268,16 @@ a {
         border: none !important;
     }
 }
+
+
+@media (max-width: 768px) {
+    .account-nav-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .account-nav-tabs .nav-link {
+        word-wrap: nowrap;
+    }
+}
