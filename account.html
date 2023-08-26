@@ -386,27 +386,32 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-9">
                             <h1 class="text-white fw-bold mb-3">Jhon Doe</h1>
-                            <nav class="">
+                            <nav class="position-relative">
+                                <span class="position-absolute translate-middle start-100 top-50 d-md-none"
+                                    id="scroll-arrow">
+                                    <i class="fa fa-angle-right text-white fs-1"></i>
+                                </span>
                                 <div class="nav border-0 nav-tabs account-nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link text-nowrap active" id="nav-account-tab"
+                                    <button class="nav-link ps-md-3 ps-0 text-nowrap active" id="nav-account-tab"
                                         data-bs-toggle="tab" data-bs-target="#nav-account" type="button" role="tab"
                                         aria-controls="nav-account" aria-selected="true">Account</button>
-                                    <button class="nav-link text-nowrap" id="nav-orders-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-orders" type="button" role="tab" aria-controls="nav-orders"
-                                        aria-selected="false">Orders</button>
-                                    <button class="nav-link text-nowrap" id="nav-purchased-items-tab"
+                                    <button class="nav-link ps-md-3 ps-0 text-nowrap" id="nav-orders-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-orders" type="button" role="tab"
+                                        aria-controls="nav-orders" aria-selected="false">Orders</button>
+                                    <button class="nav-link ps-md-3 ps-0 text-nowrap" id="nav-purchased-items-tab"
                                         data-bs-toggle="tab" data-bs-target="#nav-purchased-items" type="button"
                                         role="tab" aria-controls="nav-purchased-items" aria-selected="false">Purchased
                                         Items</button>
-                                    <button class="nav-link text-nowrap" id="nav-saved-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-saved" type="button" role="tab" aria-controls="nav-saved"
-                                        aria-selected="false">Saved Items</button>
+                                    <button class="nav-link ps-md-3 ps-0 text-nowrap" id="nav-saved-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-saved" type="button" role="tab"
+                                        aria-controls="nav-saved" aria-selected="false">Saved Items</button>
                                 </div>
                             </nav>
-
                         </div>
+
                     </div>
                 </div>
                 <div class="card-body p-md-5 bg-white" style="--bs-bg-opacity: 0.9">
@@ -1310,6 +1315,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollArrow = document.getElementById("scroll-arrow");
+            var navTabs = document.querySelector(".account-nav-tabs");
+
+            navTabs.addEventListener("scroll", function () {
+                if (navTabs.scrollLeft + navTabs.clientWidth >= navTabs.scrollWidth) {
+                    scrollArrow.style.display = "none";
+                } else {
+                    scrollArrow.style.display = "block";
+                }
+            });
+        });
+
+    </script>
 
 
     <script>

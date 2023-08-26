@@ -280,4 +280,12 @@ a {
     .account-nav-tabs .nav-link {
         word-wrap: nowrap;
     }
+
+    .end-arrow {
+        display: none;
+    }
+
+    .account-nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
 }
