@@ -17,12 +17,12 @@ body {
 }
 
 .main-section {
-    margin-top: 9em;
+    margin-top: 8em;
 }
 
 @media (max-width: 768px) {
     .main-section {
-        margin-top: 13em;
+        margin-top: 9.2em;
     }
 }
 
@@ -213,8 +213,10 @@ a {
 
 .token-bar {
     height: 25rem;
-    overflow-y: auto;
-
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -237,4 +239,26 @@ a {
 
 .form-control:focus {
     box-shadow: none;
+}
+
+.qty-group {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .qty-group {
+        width: 100%;
+    }
+}
+
+.hr-divider {
+    border-top: 3px solid #000000 !important;
+    opacity: 1;
+
+}
+
+@media (max-width: 768px) {
+    .remove-border {
+        border: none !important;
+    }
 }
