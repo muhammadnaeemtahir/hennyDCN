@@ -241,13 +241,19 @@ a {
     box-shadow: none;
 }
 
-.qty-group {
-    width: 40%;
+.product-close-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 95%;
 }
 
 @media (max-width: 768px) {
-    .qty-group {
-        width: 100%;
+    .product-close-btn {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 7%;
+        left: 90%;
     }
 }
 
