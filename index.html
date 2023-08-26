@@ -199,12 +199,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <!-- <button class="navbar-toggler border-0 d-md-none p-2" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"
-                        aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars text-dark fs-1"></i>
-                    </button> -->
                 </div>
 
                 <div class="col-12 col-md-6 justify-content-center">
@@ -559,6 +553,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.querySelector(".dropdown-toggle");
+            const dropdownItems = document.querySelectorAll(".dropdown-item");
+
+            dropdownItems.forEach(item => {
+                item.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const selectedLanguage = item.getAttribute("data-lang");
+                    const flagIcon = item.querySelector(".flag-icon").classList[1];
+
+                    dropdownToggle.innerHTML = `<span class="flag-icon ${flagIcon} fs-3"></span>`;
+                });
+            });
+        });
+    </script>
 
 
 
