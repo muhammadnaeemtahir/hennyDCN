@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>My Cart</title>
+    <title>Checkout</title>
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -371,9 +371,9 @@
     <!-- main: start -->
     <main class="main-section">
         <div class="container py-md-5 py-3">
-            <div class="col-md-9 mx-auto">
+            <div class="col-md-12 mx-auto">
                 <h1 class="text-center display-5 fw-bold mb-md-4">
-                    My Cart
+                    Checkout
                 </h1>
                 <div class="d-flex align-items-center justify-content-between mb-5">
                     <p class="text-center">My Cart</p>
@@ -382,296 +382,447 @@
                     <p class="text-center"><img src="./assets/icons/arrow-right.png" alt="" class="img-fluid"></p>
                     <p class="text-center">Checkout</p>
                 </div>
-                <div class="card rounded-0 border-dark border-2 shadow-lg">
-                    <div class="card-body" style="height: 40rem; overflow-y: scroll;">
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3">
-                                <img src="./assets/products/shirt.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 border-bottom border-dark border-2">
-                                <div class="row mb-">
-                                    <div class="col-7">
-                                        <h4>T-Shirt HennyDick</h4>
+                <div class="row mb-5">
+                    <div class="col-md-8 mb-3">
+                        <div class="card rounded-0 border-dark border-2 shadow-lg mb-3">
+                            <div class="card-body" style="height: 20rem; overflow-y: scroll;">
+                                <div class="row mb-5">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./assets/products/shirt.png" alt="" class="img-fluid">
                                     </div>
-                                    <div class="col-5">
-                                        <p>$50.00</p>
-                                    </div>
-                                </div>
-                                <div class="row mb-md-5">
-                                    <div class="col-md-7 mb-md-0 mb-3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <p class="mb-md-0 mb-2">
-                                                    Qty
-                                                </p>
+                                    <div class="col-md-9 border-bottom border-dark border-2">
+                                        <div class="row mb-">
+                                            <div class="col-7">
+                                                <h4>T-Shirt HennyDick</h4>
                                             </div>
-                                            <div class="col-md-5 col-7">
-                                                <div class="input-group border border-dark">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0">
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control text-center border-0"
-                                                        value="1">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0"><i
-                                                            class="fa-solid fa-plus"></i>
-                                                    </button>
+                                            <div class="col-5">
+                                                <p>$50.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-md-7 mb-md-0 mb-3">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <p class="mb-md-0 mb-2">
+                                                            Qty
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5 col-7">
+                                                        <div class="input-group border border-dark">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <input type="text" class="form-control text-center border-0"
+                                                                value="1">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0"><i
+                                                                    class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3">
+                                                        <p>$100.00</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-3">
-                                                <p>$100.00</p>
+                                            <div class="col-md-2 mb-md-0 mb-3">
+                                                <p>Size: XL</p>
+                                            </div>
+                                            <div class="col-md-3 mb-md-0 mb-3">
+                                                <div class="d-flex">
+                                                    <p>Color</p>
+                                                    <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-2 mb-md-0 mb-3">
-                                        <p>Size: XL</p>
-                                    </div>
-                                    <div class="col-md-3 mb-md-0 mb-3">
-                                        <div class="d-flex">
-                                            <p>Color</p>
-                                            <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                        <div class="">
+                                            <button class="btn">Save for later</button>
+                                            <button class="btn">Delete</button>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <button class="btn">Save for later</button>
-                                    <button class="btn">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3">
-                                <img src="./assets/products/shirt.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 border-bottom border-dark border-2">
-                                <div class="row mb-">
-                                    <div class="col-7">
-                                        <h4>T-Shirt HennyDick</h4>
-                                    </div>
-                                    <div class="col-5">
-                                        <p>$50.00</p>
                                     </div>
                                 </div>
                                 <div class="row mb-5">
-                                    <div class="col-md-7 mb-md-0 mb-3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <p class="mb-md-0 mb-2">
-                                                    Qty
-                                                </p>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./assets/products/shirt.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-9 border-bottom border-dark border-2">
+                                        <div class="row mb-">
+                                            <div class="col-7">
+                                                <h4>T-Shirt HennyDick</h4>
                                             </div>
-                                            <div class="col-md-5 col-7">
-                                                <div class="input-group border border-dark">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0">
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control text-center border-0"
-                                                        value="1">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0"><i
-                                                            class="fa-solid fa-plus"></i>
-                                                    </button>
+                                            <div class="col-5">
+                                                <p>$50.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-md-7 mb-md-0 mb-3">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <p class="mb-md-0 mb-2">
+                                                            Qty
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5 col-7">
+                                                        <div class="input-group border border-dark">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <input type="text" class="form-control text-center border-0"
+                                                                value="1">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0"><i
+                                                                    class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3">
+                                                        <p>$100.00</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-3">
-                                                <p>$100.00</p>
+                                            <div class="col-md-2 mb-md-0 mb-3">
+                                                <p>Size: XL</p>
+                                            </div>
+                                            <div class="col-md-3 mb-md-0 mb-3">
+                                                <div class="d-flex">
+                                                    <p>Color</p>
+                                                    <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-2 mb-md-0 mb-3">
-                                        <p>Size: XL</p>
-                                    </div>
-                                    <div class="col-md-3 mb-md-0 mb-3">
-                                        <div class="d-flex">
-                                            <p>Color</p>
-                                            <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                        <div class="">
+                                            <button class="btn">Save for later</button>
+                                            <button class="btn">Delete</button>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <button class="btn">Save for later</button>
-                                    <button class="btn">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3">
-                                <img src="./assets/products/shirt.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 border-bottom border-dark border-2">
-                                <div class="row mb-">
-                                    <div class="col-7">
-                                        <h4>T-Shirt HennyDick</h4>
-                                    </div>
-                                    <div class="col-5">
-                                        <p>$50.00</p>
                                     </div>
                                 </div>
                                 <div class="row mb-5">
-                                    <div class="col-md-7 mb-md-0 mb-3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <p class="mb-md-0 mb-2">
-                                                    Qty
-                                                </p>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./assets/products/shirt.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-9 border-bottom border-dark border-2">
+                                        <div class="row mb-">
+                                            <div class="col-7">
+                                                <h4>T-Shirt HennyDick</h4>
                                             </div>
-                                            <div class="col-md-5 col-7">
-                                                <div class="input-group border border-dark">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0">
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control text-center border-0"
-                                                        value="1">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0"><i
-                                                            class="fa-solid fa-plus"></i>
-                                                    </button>
+                                            <div class="col-5">
+                                                <p>$50.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-md-7 mb-md-0 mb-3">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <p class="mb-md-0 mb-2">
+                                                            Qty
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5 col-7">
+                                                        <div class="input-group border border-dark">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <input type="text" class="form-control text-center border-0"
+                                                                value="1">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0"><i
+                                                                    class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3">
+                                                        <p>$100.00</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-3">
-                                                <p>$100.00</p>
+                                            <div class="col-md-2 mb-md-0 mb-3">
+                                                <p>Size: XL</p>
+                                            </div>
+                                            <div class="col-md-3 mb-md-0 mb-3">
+                                                <div class="d-flex">
+                                                    <p>Color</p>
+                                                    <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-2 mb-md-0 mb-3">
-                                        <p>Size: XL</p>
-                                    </div>
-                                    <div class="col-md-3 mb-md-0 mb-3">
-                                        <div class="d-flex">
-                                            <p>Color</p>
-                                            <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                        <div class="">
+                                            <button class="btn">Save for later</button>
+                                            <button class="btn">Delete</button>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <button class="btn">Save for later</button>
-                                    <button class="btn">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3">
-                                <img src="./assets/products/shirt.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 border-bottom border-dark border-2">
-                                <div class="row mb-">
-                                    <div class="col-7">
-                                        <h4>T-Shirt HennyDick</h4>
-                                    </div>
-                                    <div class="col-5">
-                                        <p>$50.00</p>
                                     </div>
                                 </div>
                                 <div class="row mb-5">
-                                    <div class="col-md-7 mb-md-0 mb-3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <p class="mb-md-0 mb-2">
-                                                    Qty
-                                                </p>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./assets/products/shirt.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-9 border-bottom border-dark border-2">
+                                        <div class="row mb-">
+                                            <div class="col-7">
+                                                <h4>T-Shirt HennyDick</h4>
                                             </div>
-                                            <div class="col-md-5 col-7">
-                                                <div class="input-group border border-dark">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0">
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control text-center border-0"
-                                                        value="1">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0"><i
-                                                            class="fa-solid fa-plus"></i>
-                                                    </button>
+                                            <div class="col-5">
+                                                <p>$50.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-md-7 mb-md-0 mb-3">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <p class="mb-md-0 mb-2">
+                                                            Qty
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5 col-7">
+                                                        <div class="input-group border border-dark">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <input type="text" class="form-control text-center border-0"
+                                                                value="1">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0"><i
+                                                                    class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3">
+                                                        <p>$100.00</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-3">
-                                                <p>$100.00</p>
+                                            <div class="col-md-2 mb-md-0 mb-3">
+                                                <p>Size: XL</p>
+                                            </div>
+                                            <div class="col-md-3 mb-md-0 mb-3">
+                                                <div class="d-flex">
+                                                    <p>Color</p>
+                                                    <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-2 mb-md-0 mb-3">
-                                        <p>Size: XL</p>
-                                    </div>
-                                    <div class="col-md-3 mb-md-0 mb-3">
-                                        <div class="d-flex">
-                                            <p>Color</p>
-                                            <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                        <div class="">
+                                            <button class="btn">Save for later</button>
+                                            <button class="btn">Delete</button>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <button class="btn">Save for later</button>
-                                    <button class="btn">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-3 mb-3">
-                                <img src="./assets/products/shirt.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 border-bottom border-dark border-2">
-                                <div class="row mb-">
-                                    <div class="col-7">
-                                        <h4>T-Shirt HennyDick</h4>
-                                    </div>
-                                    <div class="col-5">
-                                        <p>$50.00</p>
                                     </div>
                                 </div>
                                 <div class="row mb-5">
-                                    <div class="col-md-7 mb-md-0 mb-3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <p class="mb-md-0 mb-2">
-                                                    Qty
-                                                </p>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./assets/products/shirt.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-9 border-bottom border-dark border-2">
+                                        <div class="row mb-">
+                                            <div class="col-7">
+                                                <h4>T-Shirt HennyDick</h4>
                                             </div>
-                                            <div class="col-md-5 col-7">
-                                                <div class="input-group border border-dark">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0">
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control text-center border-0"
-                                                        value="1">
-                                                    <button type="button"
-                                                        class="input-group-text bg-transparent border-0"><i
-                                                            class="fa-solid fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-3">
-                                                <p>$100.00</p>
+                                            <div class="col-5">
+                                                <p>$50.00</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-2 mb-md-0 mb-3">
-                                        <p>Size: XL</p>
-                                    </div>
-                                    <div class="col-md-3 mb-md-0 mb-3">
-                                        <div class="d-flex">
-                                            <p>Color</p>
-                                            <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                        <div class="row mb-5">
+                                            <div class="col-md-7 mb-md-0 mb-3">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <p class="mb-md-0 mb-2">
+                                                            Qty
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5 col-7">
+                                                        <div class="input-group border border-dark">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <input type="text" class="form-control text-center border-0"
+                                                                value="1">
+                                                            <button type="button"
+                                                                class="input-group-text bg-transparent border-0"><i
+                                                                    class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3">
+                                                        <p>$100.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mb-md-0 mb-3">
+                                                <p>Size: XL</p>
+                                            </div>
+                                            <div class="col-md-3 mb-md-0 mb-3">
+                                                <div class="d-flex">
+                                                    <p>Color</p>
+                                                    <input type="color" name="" class="border-0 ms-2" id="" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <button class="btn">Save for later</button>
+                                            <button class="btn">Delete</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <button class="btn">Save for later</button>
-                                    <button class="btn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 border-dark border-2 shadow-lg mb-3">
+                            <div class="card-header bg-transparent border-0">
+                                <h5 class="card-title fw-bold">
+                                    Shipping Method
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-7 mx-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Standard $0.00
+                                        </label>
+                                        <p class="text-md-center">
+                                            Estimated arrival by 00/00
+                                        </p>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Express $0.00
+                                        </label>
+                                        <p class="text-md-center">
+                                            Estimated arrival by 00/00
+                                        </p>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Next day shipping $0.00
+                                        </label>
+                                        <p class="text-md-center">
+                                            Estimated arrival by 00/00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 border-dark border-2 shadow-lg mb-3">
+                            <div class="card-header bg-transparent border-0">
+                                <h5 class="card-title fw-bold">
+                                    Payment Method
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-7 mx-auto">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Master Card **** 0000
+                                            </label>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="btn text-primary text-decoration-underline">
+                                                Edit
+                                            </button>
+                                            <button class="btn text-primary text-decoration-underline">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Visa Card **** 0000
+                                            </label>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="btn text-primary text-decoration-underline">
+                                                Edit
+                                            </button>
+                                            <button class="btn text-primary text-decoration-underline">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="btn text-primary text-decoration-underline">
+                                        Add Account
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card border-dark rounded-0 shadow-lg mb-3">
+                            <div class="card-header bg-primary rounded-0">
+                                <p class="fw-bold text-white mb-0 text-center">
+                                    Order Summary
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+                                        Subtotal
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        $100.00
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Delivery
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        $20.00
+                                    </div>
+                                    <div class="col-3 mb-4">
+                                        Ship to:
+                                    </div>
+                                    <div class="col-9 mb-4">
+                                        123 Anytown st #1a
+                                        City, State, 00000
+                                        USA
+                                    </div>
+                                    <div class="col-8 mb-4">
+
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Promo code
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <input type="text" class="form-control bg-light">
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Tax
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        $30.00
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Total
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        $150.00
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <a class="btn btn-primary rounded-0 w-100 border-dark border-2"
+                                        href="./payment-and-shipping.html">Checkout</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-2 ms-auto mt-3">
-                        <a href="./payment-and-shipping.html"
-                            class="btn btn-primary rounded-0 border-dark bordr-2 fw-bold w-100">Proceed</a>
-                    </div>
-                </div>
+                <p class="text-center">
+                    By placing your order, you agree to <a href="#">HennyDnC's</a> <a href="#"
+                        class="text-primary text-decoration-underline">privacy notice</a> and <a href="#"
+                        class="text-primary text-decoration-underline">conditions of
+                        use</a>.
+                </p>
             </div>
         </div>
     </main>
