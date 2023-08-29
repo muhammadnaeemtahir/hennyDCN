@@ -289,3 +289,13 @@ a {
         display: none;
     }
 }
+
+/* my-cart: start */
+@media (max-width: 768px) {
+    .arrow-icon {
+        width: 1.5rem;
+        height: auto;
+    }
+}
+
+/* my-cart: end */
